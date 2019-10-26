@@ -17,6 +17,6 @@ def RedditPostAutoReader(subreddit):
         print(title)
         #print("didn't work")
     # print(post.upvote_ratio
-    f = open("demofile2.txt", "a")
+    f = open("redditPost.txt", "a")
     f.write("Now the file has more content!")
     f.close()
