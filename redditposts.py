@@ -1,6 +1,24 @@
 import praw
 from gtts import gTTS
 import os
+import pygame, sys, os
+import pygame.camera
+from pygame.locals import *
+
+def pygameVideo():
+
+    pygame.init()
+    pygame.camera.init()
+
+    try:
+        os.makedirs("Snaps")
+    except OSError:
+        pass
+    screen = pygame.display.set_mode((640, 480))
+
+    cam = pygame.camera.Camera("/dev/video0", (640, 480))
+    cam.start()
+    print("")
 
 
 def RedditPostAutoReader(subreddit):
@@ -16,11 +34,10 @@ def RedditPostAutoReader(subreddit):
             tts = gTTS(text=title + paragraph, lang='en')
             tts.save("result.mp3")
             os.system("mpg321 result.mp3")
-            f.close()
         else:
-             print("it didn't work")
+             print("No Description")
     print(post.upvote_ratio)
-
+    f.close()
 def checkIfTextOrImage():
     textPost = (post.is_self)
     if textPost == "True":
@@ -31,5 +48,5 @@ def checkIfTextOrImage():
 if __name__ == '__main__':
     user_input = "nosleep"
     subreddit = user_input
-
-    RedditPostAutoReader(subreddit)
+    #RedditPostAutoReader(subreddit)
+    pygameVideo()
