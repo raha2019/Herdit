@@ -1,28 +1,70 @@
-import socketserver
+from bottle import route, request, run, static_file
 import redditposts
-class MyTCPHandler(socketserver.BaseRequestHandler):
-    """
-    The RequestHandler class for our server.
+@route('/', method="GET")
+def form():
+    return '''
+        <html>
+            <head>
+                    <style>
+                    body{
+                            background: #FFFFFF;
+                            background: -moz-linear-gradient(top, #7d8570 0%, #646F58 66%, #504B3A 100%);
+                            background: -webkit-linear-gradient(top, #7d8570 0%, #646F58 66%, #504B3A 100%);
+                            background: linear-gradient(to bottom, #7d8570 0%, #646F58 66%, #504B3A 100%);
+                            text-align:center;
+                            color: #000000;
+                            font-family: arial;
+                            
+                    }
+                    h1{
+                            color: #FFFFFF;
+                            background: -moz-linear-gradient(top, #afbe8f 0%, #7d8570 86%, #646F58 100%);
+                            background: -webkit-linear-gradient(top, #afbe8f 0%, #7d8570 86%, #646F58 100%);
+                            background: linear-gradient(to bottom, #afbe8f 0%, #7d8570 86%, #646F58 100%);
+                            text-shadow: 4px 3px 0 #7A7A7A;
+                            font-size:100;
+                    }
+                    form {
+                        margin: 0;
+                        background: white;
+                        position: absolute;
+                            padding:30px;
+                            border:10px solid #000000;
+                            background: #FFFFFF;
+                            background: -moz-linear-gradient(top, #afbe8f 0%, #7d8570 86%, #646F58 100%);
+                            background: -webkit-linear-gradient(top, #afbe8f 0%, #7d8570 86%, #646F58 100%);
+                            background : linear-gradient(to bottom, #afbe8f 0%, #7d8570 86%, #646F58 100%);
+                        top: 50%;
+                        left: 50%;
+                        margin-right: -50%;
+                        transform: translate(-50%, -50%);
+                            text-align:center;
+                    }
+                    #submit{
+                            background: #FFFFFF;
+                            background: -moz-linear-gradient(top, #dde392 0%, #afbe8f 86%, #7d8570 100%);
+                            background: -webkit-linear-gradient(top, #dde392 0%, #afbe8f 86%, #7d8570 100%);
+                            background: linear-gradient(to bottom, #dde392 0%, #afbe8f 86%, #7d8570 100%);
+                    }
+u                    </style>
+                    <title>Herdit!</title>
+            </head>
+            <body>
+                    <h1>Herdit!</h1>
+                    <form action="/sendsub" method="POST">
+                      Subreddit: <input type="text" name="reddit" value="">
+                      <br>
+                      <br>
+                      <input type="submit" id="submit" value="Let me Heerit!">
+                    </form>
+            </body>
+        </html>
+    '''
 
-    It is instantiated once per connection to the server, and must
-    override the handle() method to implement communication to the
-    client.
-    """
-
-    def handle(self):
-        # self.request is the TCP socket connected to the client
-        self.data = self.request.recv(1024).strip()
-        print("{} wrote:".format(self.client_address[0]))
-        print(self.data)
-        # just send back the same data, but upper-cased
-        self.request.sendall(redditposts.RedditPostAutoReader(self.data))
-
-if __name__ == "__main__":
-    HOST, PORT = "localhost", 9999
-
-    # Create the server, binding to localhost on port 9999
-    server = socketserver.TCPServer((HOST, PORT), MyTCPHandler)
-
-    # Activate the server; this will keep running until you
-    # interrupt the program with Ctrl-C
-    server.serve_forever()
+@route('/sendsub',method="GET")
+@route('/sendsub',method="POST")
+def sendsub():
+    print(request.forms.get('reddit'))
+    redditposts.RedditPostAutoReader(request.forms.get('reddit'))
+    return static_file("result.mp3", root="")
+run(host='localhost', port=9999)
