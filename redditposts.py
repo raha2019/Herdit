@@ -9,11 +9,13 @@ def RedditPostAutoReader(subreddit):
     popular_posts = reddit.subreddit(subreddit).hot(limit=1)
     for post in popular_posts:
         title = (post.title)
-        text = (post.selftext)
-        if post.is_self():
-            print(title)
-            print(text)
-            return text
+        paragraph = (post.selftext)
+        #textPost = (post.is_self)
+        # if textPost:
+        #     return title
+        # else:
+        print(title)
+        #print("didn't work")
     # print(post.upvote_ratio
     f = open("demofile2.txt", "a")
     f.write("Now the file has more content!")
