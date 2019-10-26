@@ -15,6 +15,7 @@ def RedditPostAutoReader(subreddit):
         #     return title
         # else:
         print(title)
+        return paragraph
         #print("didn't work")
     # print(post.upvote_ratio
     f = open("demofile2.txt", "a")
