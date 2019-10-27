@@ -31,8 +31,8 @@ def RedditPostAutoReader(subreddit,amount):
              print("No Description")
     print(post.upvote_ratio)
     tts = gTTS(text=title + paragraph, lang='en')
-    tts.save("result.mp3")
-    os.system("mpg321 result.mp3")
+    tts.save("result.wav")
+    os.system("mpg321 result.wav")
     f.close()
 
 def checkIfTextOrImage():
@@ -43,6 +43,4 @@ def checkIfTextOrImage():
          print("it didn't work")
 
 if __name__ == '__main__':
-    user_input = "nosleep"
-    subreddit = user_input
     RedditPostAutoReader(subreddit,5)
