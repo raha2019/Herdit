@@ -11,10 +11,8 @@ def form():
                             text-align:center;
                             color: #000000;
                             font-family: arial;
-
                     }
                     h1{
-
                             text-shadow: 4px 3px 0 #7A7A7A;
                             font-size:100;
                     }
@@ -83,7 +81,6 @@ def sendsub():
         redditposts.RedditPostAutoReader(request.forms.get('reddit'),int(request.forms.get('amount')))
     except:
         pass
-    # if os.name == 'nt':
-    #     return static_file("result.mp3", root=".\\")
-    return static_file("result.wav", root="./")
+    return static_file("output.mp4", root=".\\")
+    
 run(host='localhost', port=9999)

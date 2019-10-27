@@ -32,9 +32,9 @@ def video(posts):
             
             gTTS(text=message, lang="en").save("audio.mp3")
             length=int(MP3("audio.mp3").info.length)
-            img = Image.new('RGB', (800, 800), color = (73, 109, 137))
+            img = Image.new('RGB', (800, 800), color = (0,0,0))
             d = ImageDraw.Draw(img)
-            d.text((10,10), message, fill=(255,255,0))
+            d.text((10,10), message, fill=(255, 102, 25))
             img.save('frame'+str(x)+'.png')
             imgio=imageio.imread('frame'+str(x)+'.png')
             for i in range(length):
@@ -57,7 +57,7 @@ def video(posts):
     ff.run()
     print("done")
     gTTS(text=totaltext, lang="en").save("audio.mp3")
-    os.system("C:\\ffmpeg\\bin\\ffmpeg.exe -i silent.mp4 -i audio.mp3 -c copy -map 0:v -map 1:a output.mp4") #Enter Own Path
+    os.system("C:\\ffmpeg\\bin\\ffmpeg.exe -i silent.mp4 -i audio.mp3 -c copy -map 0:v -map 1:a output.mp4")
 def RedditPostAutoReader(subreddit,amount):
     reddit = praw.Reddit(client_id='zQkL7caN9akLQw', client_secret='XXkY9kxR42u5LnhoJcGKe3YTtSw', user_agent='RedditPostAutoReader')
     popular_posts = reddit.subreddit(subreddit).hot(limit=amount)
@@ -87,4 +87,4 @@ def checkIfTextOrImage():
          print("it didn't work")
 
 if __name__ == '__main__':
-    RedditPostAutoReader(input("Subreddit: "),int(input("Amount: ")))
+    RedditPostAutoReader(input("Subreddit:"),int(input("Amount:")))
