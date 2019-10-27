@@ -84,6 +84,6 @@ def sendsub():
     except:
         pass
     # if os.name == 'nt':
-    #     return static_file("result.mp3", root=".\\")
+    #     return static_file("result.wav", root=".\\")
     return static_file("result.wav", root="./")
 run(host='localhost', port=9999)

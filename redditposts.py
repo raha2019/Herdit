@@ -1,10 +1,25 @@
 import praw
+import requests
+import re
+import pytesseract
 from gtts import gTTS
 import os
-import pygame, sys, os
-import pygame.camera
-from pygame.locals import *
+import json
 from PIL import Image, ImageDraw, ImageFont
+
+
+def downloadImage(amount): #Done after 2AM
+    a = open('dankmemes.json')
+    dankmemes = json.loads(a.read())
+    dankmemes2 = dankmemes.get('data')
+    dankmemes3 = dankmemes2.get('children')
+    for i in range(amount):
+        dankmemes4 = dankmemes3[i]
+        dankmemes5 = dankmemes4.get('data')
+        img_url = dankmemes5.get('url')
+        print(str(img_url))
+
+
 
 
 def video(imageText):
@@ -27,20 +42,16 @@ def RedditPostAutoReader(subreddit,amount):
         if textPost == True:
             f.write(title+"\n" + paragraph+"\n")
             posts.append(title+"\n"+paragraph)
+        elif textPost == False:
+            get_image(popular_posts)
         else:
              print("No Description")
-    print(post.upvote_ratio)
-    tts = gTTS(text=title + paragraph, lang='en')
+    tts = gTTS(text="\n\n".join(posts),lang='en')
     tts.save("result.wav")
     os.system("mpg321 result.wav")
     f.close()
 
-def checkIfTextOrImage():
-    textPost = (post.is_self)
-    if textPost == "True":
-          return title
-    else:
-         print("it didn't work")
-
+amount = 10
 if __name__ == '__main__':
-    RedditPostAutoReader(subreddit,5)
+    #RedditPostAutoReader(subreddit,5)
+    downloadImage(amount)
