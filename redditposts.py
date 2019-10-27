@@ -15,7 +15,7 @@ def video(posts):
     for post in posts:
         x+=1
         print(x)
-        
+
         length=0
         if post[1]:
             words=post[0].split(" ")
@@ -29,7 +29,7 @@ def video(posts):
             posts.insert(x,(message[1500:],False))
             message=message[:1500]
         try:
-            
+
             gTTS(text=message, lang="en").save("audio.mp3")
             length=int(MP3("audio.mp3").info.length)
             img = Image.new('RGB', (800, 800), color = (73, 109, 137))
@@ -52,12 +52,12 @@ def video(posts):
         os.remove("output.mp4")
     except:
         pass
-    ff=FFmpeg(executable="C:\\ffmpeg\\bin\\ffmpeg.exe", inputs={'test.gif': None}, outputs={'silent.mp4': None})
+    ff=FFmpeg(executable="/usr/local/Cellar/ffmpeg/4.1.3_1/bin/ffmpeg", inputs={'test.gif': None}, outputs={'silent.mp4': None})
     print("silent")
     ff.run()
     print("done")
     gTTS(text=totaltext, lang="en").save("audio.mp3")
-    os.system("C:\\ffmpeg\\bin\\ffmpeg.exe -i silent.mp4 -i audio.mp3 -c copy -map 0:v -map 1:a output.mp4")
+    os.system("/usr/local/Cellar/ffmpeg/4.1.3_1/bin/ffmpeg -i silent.mp4 -i audio.mp3 -c copy -map 0:v -map 1:a output.mp4")
 def RedditPostAutoReader(subreddit,amount):
     reddit = praw.Reddit(client_id='zQkL7caN9akLQw', client_secret='XXkY9kxR42u5LnhoJcGKe3YTtSw', user_agent='RedditPostAutoReader')
     popular_posts = reddit.subreddit(subreddit).hot(limit=amount)
@@ -87,4 +87,4 @@ def checkIfTextOrImage():
          print("it didn't work")
 
 if __name__ == '__main__':
-    RedditPostAutoReader(input("Subreddit:"),int(input("Amount:")))
+    RedditPostAutoReader(input("Subreddit: "),int(input("Amount: ")))
