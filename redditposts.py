@@ -57,7 +57,7 @@ def video(posts):
     ff.run()
     print("done")
     gTTS(text=totaltext, lang="en").save("audio.mp3")
-    os.system("C:\\ffmpeg\\bin\\ffmpeg.exe -i silent.mp4 -i audio.mp3 -c copy -map 0:v -map 1:a output.mp4")
+    os.system("C:\\ffmpeg\\bin\\ffmpeg.exe -i silent.mp4 -i audio.mp3 -c copy -map 0:v -map 1:a output.mp4") #Enter Own Path
 def RedditPostAutoReader(subreddit,amount):
     reddit = praw.Reddit(client_id='zQkL7caN9akLQw', client_secret='XXkY9kxR42u5LnhoJcGKe3YTtSw', user_agent='RedditPostAutoReader')
     popular_posts = reddit.subreddit(subreddit).hot(limit=amount)
