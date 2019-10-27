@@ -14,7 +14,7 @@ def form():
                             text-align:center;
                             color: #000000;
                             font-family: arial;
-                            
+
                     }
                     h1{
                             color: #FFFFFF;
@@ -68,6 +68,5 @@ def sendsub():
         redditposts.RedditPostAutoReader(request.forms.get('reddit'))
     except:
         pass
-    return static_file("result.mp3", root=".\\")
-    
+    return static_file("result.mp3", root="./")
 run(host='localhost', port=9999)

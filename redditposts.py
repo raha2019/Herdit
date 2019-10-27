@@ -7,7 +7,7 @@ from pygame.locals import *
 from PIL import Image, ImageDraw, ImageFont
 
 
-def hopefully(imageText):
+def video(imageText):
 
     print("testing")
     img = Image.new('RGB', (100, 30), color = (73, 109, 137))
@@ -47,4 +47,3 @@ if __name__ == '__main__':
     user_input = "nosleep"
     subreddit = user_input
     RedditPostAutoReader(subreddit)
-    hopefully()
