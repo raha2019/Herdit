@@ -8,7 +8,6 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 def video(imageText):
-
     print("testing")
     img = Image.new('RGB', (100, 30), color = (73, 109, 137))
     d = ImageDraw.Draw(img)
