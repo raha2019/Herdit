@@ -16,9 +16,9 @@ def video(imageText):
 
     img.save('frame'+h+'.png')
 
-def RedditPostAutoReader(subreddit):
+def RedditPostAutoReader(subreddit,amount):
     reddit = praw.Reddit(client_id='zQkL7caN9akLQw', client_secret='XXkY9kxR42u5LnhoJcGKe3YTtSw', user_agent='RedditPostAutoReader')
-    popular_posts = reddit.subreddit(subreddit).hot(limit=5)
+    popular_posts = reddit.subreddit(subreddit).hot(limit=amount)
     f = open("redditPost.txt", "w+")
     posts=[]
     for post in popular_posts:
@@ -46,4 +46,4 @@ def checkIfTextOrImage():
 if __name__ == '__main__':
     user_input = "nosleep"
     subreddit = user_input
-    RedditPostAutoReader(subreddit)
+    RedditPostAutoReader(subreddit,5)
