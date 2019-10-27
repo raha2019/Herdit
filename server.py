@@ -1,6 +1,6 @@
 from bottle import route, request, run, static_file
 import redditposts
-@route('/', method="GET")
+@route('/form', method="GET")
 def form():
     return '''
         <html>
@@ -14,7 +14,7 @@ def form():
                             text-align:center;
                             color: #000000;
                             font-family: arial;
-
+                            
                     }
                     h1{
                             color: #FFFFFF;
@@ -52,6 +52,7 @@ u                    </style>
             <body>
                     <h1>Herdit!</h1>
                     <form action="/sendsub" method="POST">
+                      Subreddit: <input type="text" name="reddit" value="">
                       <br>
                       <br>
                       <input type="submit" id="submit" value="Let me Heerit!">
@@ -59,11 +60,14 @@ u                    </style>
             </body>
         </html>
     '''
-
 @route('/sendsub',method="GET")
 @route('/sendsub',method="POST")
 def sendsub():
-    print(request.forms.get('reddit'))
-    redditposts.RedditPostAutoReader(request.forms.get('reddit'))
-    return static_file("result.mp3", root="")
+    #print(request.forms.get('reddit'))
+    try:
+        redditposts.RedditPostAutoReader(request.forms.get('reddit'))
+    except:
+        pass
+    return static_file("result.mp3", root=".\\")
+    
 run(host='localhost', port=9999)
