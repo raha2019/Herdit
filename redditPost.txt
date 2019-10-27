@@ -1,50 +1,126 @@
-I've been a search and rescue diver for 12 years. We see a lot of strange and disgusting things, but what I saw last week has me questioning both my job and reality [Part 3]
-[Part 1](https://www.reddit.com/r/nosleep/comments/dlhqu6/ive_been_a_search_and_rescue_diver_for_12_years/)
+PSA: Launcher Issue fix.
+If you are having trouble starting/opening the Minecraft Launcher after its most recent update, please read the following.
 
-[Part 2](https://www.reddit.com/r/nosleep/comments/dmg9c8/ive_been_a_search_and_rescue_diver_for_12_years/)
+If you are unable to start the Minecraft Launcher, right now there is no proper Fix for the issue. But I am seeing a few people that got a workaround working. Keep in mind this method is not the most recommended as it may interfere with the normal launcher once the issue is resolved, so make a backup of your .minecraft folder.
 
-Despite all the things that have happened, I’ve decided to stay here. To be honest, I fully intended on leaving as soon as possible after my last post. But that changed when I went to Michael’s funeral. It was a grueling experience. He was only twenty-two years old. His girlfriend cried the entire time, and I couldn’t help but feel guilty when I saw his young friends carrying his casket to its final resting place. His death never should have happened.
+Then right click the launcher shortcut and select Properties. Go into the compatibility tab and turn on Compatibility Mode, set it to Windows Vista. Then hit Apply and OK. This will run a legacy launcher. Launch the game here once, then close the game and launcher (If you get stuck with a message that says "Prepairing" you can also just close it all out). Turn off compatibility mode, the current launcher should redownload itself and work.
 
-I had another nightmare last night. This one was the worst yet. Just like last time, those hands reached up from the darkness and grabbed me, covering my mouth and pinning my arms to the bed. That sickening fishy smell turned my stomach and my eyes began to water as I struggled against them. 
+So far this has worked for most of the users with the issue in the #minecrafthelp IRC channel. Let me know if you get any different results.
 
-Then two more hands rose up and held my eyes open. I watched in horror as a face protruded from the ceiling above me. It was like the one I had seen at the water, all green and mossy. Tears began to stream down my face as I recognized the features - It was Michael.
+Side Note: If you are having an issue where the launcher gives you messages similar to either "Cannot update the runtime environment" or "Cannot update the native launcher", these are most often caused by other programs running on the computer introducing an incompatibility or preventing the game from downloading or installing the files it needs. Please check the info available [here](https://minecraftirc.net/support-articles/known-incompatible-software/) to make sure you do not have any incompatible software installed.
 
-“Why did you do this?” He said, cold black fluid dripping from his mouth.
+Also: as apparently this needs to be said now. If your computer has multiple storage devices installed, make sure you are installing the launcher to its default location which is on your OS drive.
 
-I tried to respond but couldn’t past the hands that were clasped over my face.
+**Update:** There was another launcher update released around October 21st. This may resolve the issue for users who still had issues after trying the workaround.
+Minecraft Bi-Weekly Build Challenge #82: Vineyard
+#**[LAST WEEK'S THEME: NETHER BASE](https://www.reddit.com/r/Minecraft/comments/dauh1t/minecraft_biweekly_build_challenge_81_nether_base/)**
 
-“Why why why why...” Michael went on and on, his voice becoming raspier with every query. I laid there for what felt like hours while he stared down at me and asked why I’d done this to him.
 
-I woke up in a cold sweat and could have sworn that disgusting smell still permeated my room.
+#**Gold**
 
-I’m beginning to think that this is all my fault. I should have heeded the warnings about Badwater. I don’t think I was the first to go there, but I was the first to see the truth of it and come back alive. 
+[Team_ElJay](https://imgur.com/gallery/sHPwFlC)
 
-Badwater isn’t just well known amongst the divers. There’s a variety of local legends about that part of the river, and, when I think back, I recall hearing something about hands that dragged people to the water’s depths. Growing up, kids would spread rumors and folk tales about Badwater and the river as a whole. As I got older, I assumed they were just stories that grown ups had made up to keep us away from the dangerous rapids.
+What an incredible build. 
 
-I began digging into the history of our town. Legends go back as far as anyone can remember, and even the natives told stories about the river, treating with a certain fear and reverence. I found an eerily familiar description of a Native myth about the river. It was in the library’s archives as part of a local university professor’s thesis regarding metaphorical folklore.
+I would normally never consider living in hell, not in game and definitely not in real life but this makes it a little more appealing. Loved the design of the houses and especially the location, above the lava. One thing that I noticed as well was the color of the houses. I never would have guessed someone would use end bricks and prismarine in a nether build, which are quite literally the opposite of the nether. Yet here we are and the end result was a great contrast between the bleak landscape and fantastic build!
 
-The myth tells the tale of a young man who lived by the river. He had everything he ever wanted: a beautiful wife, a son, bountiful harvests, and a warm place to sleep. However, that all changed when he was overcome by a terrible sickness. That same sickness spread to his wife and child. He recovered, but his family didn’t, and he was left alone.
+Awesome job!
 
-He still had a warm bed at night and healthy crops, but he fell into a deep depression. Unsure what to do with himself, he would wander the river’s edge for hours, silently hoping that one day he would fall in and be swept away from his troubles. 
+#**Silver**
 
-One day, while pacing the riverbank, he heard his wife and child crying out for him. Frantic, he searched everywhere for the source of the voices. They began to tell him that they were living happily in the river now. His family urged him to dive in and join them so that he too could live happily. Without a second thought, he jumped in only to drown, cold and alone.
+[Nyodex](https://imgur.com/a/xT1XEU5)
 
-The person who examined that myth believed it to be a warning against desiring things that we’ve lost and getting caught up in the past. I now know this isn’t true. The myth is a true story and warns people against the dangers of those things that live in the river. 
+Really liked the landscaping done in this build. I'm not lying when I say that I had to look at the first images a couple times to make sure you weren't using a mod that tried to add the new nether things. Great building, especially only based off those images we got. I did like the base although I felt the entrance made from quartz and then into hardened clay felt slightly off but the build was still very well done!
 
-Through further digging, I’ve found that there’s actually a lot of native lore about the river. Many of them are similar to the story I told you about, but there are others that make this whole situation seem a lot more complex. Many of them reference some kind of god or spirit that the natives worshipped. There are a few different translations, but the most common one I’ve seen is “King Moss.” Some stories refer to him as a personification of the river itself, while others describe him as a spirit with whom the people struggled.
+Great job!
 
-However, one common theme is the existence of a sort of pact made between King Moss and the locals. Some stories made it sound like they sacrificed people to him in order to quell his rage, while others described a situation in which he was to be left alone in exchange for not actively hurting humans.
+#**Bronze**
 
-I can’t help but be reminded of the agreement that Moose and the others mentioned. Could they be referring to a pact similar to this one? I don’t know about this whole King Moss myth, but after all that I’ve seen I’m almost willing to believe anything.
+[echoct21](https://imgur.com/a/AzJHol0)
 
-After that, I got the idea to plot out all the disappearances and deaths that have occurred in the past few decades. What I found was pretty typical. Most reports were evenly distributed around the most dangerous parts of the river as well as the areas where the most people tended to gather. However, I noticed an unnerving trend. Reports in which there was no body recovered occurred almost exclusively in the areas around Badwater as far back as the reports go. In those areas, a body was only recovered about 15% of the time. This was commonly attributed to the strong current there which supposedly carried them too far to be found. But now I know the truth. The hands got those people and dragged them down to feed. 
+While I do love the idea of people living in the nether in nice bases, I also feel the nether is a perfect place to make ruined, destroyed bases as well. And this build did it perfectly. While this build wasn't mainly ruins and was livable, I was impressed how the entire build felt like it was going to collapse any minute. I won't talk much about the buildings, because they are well built however I do want to mention the landscape. Was really impressed with how well it flowed together. The different blocks incorporated into the ground broke it up enough that it didn't draw away from the main build yet it still looked good.
 
-However, while doing this I noticed something even more intriguing. I was using a couple different maps to plot out the disappearances when I realized there were inconsistencies between the two. Curious, I looked at a few more maps and saw even more inconsistencies. They were all relatively similar aside from a few changes due to creeks drying up and urbanization.
+Good job! 
 
-However, there was one area deep in the forest west of Badwater that didn’t seem to match up on any of the maps. Some of them indicated nothing but forest there, while others showed a small lake. A few of the older maps even depicted a cave system.
 
-I used Google Earth to look at the area, but something strange occurred. The picture was incredibly pixelated. Everything around it was clear, but it became blurry as soon as I toggled over to the area where the maps were inconsistent. It was still somewhat visible, but I had difficulty discerning anything other than tree coverage. 
+**Honourable mentions**
 
-I’m surprised that I’d never been there before. I’ve spent a lot of time wandering the forest, and I somehow never managed to stumble into that place. I’m going to check it out soon. I think this secret goes deeper than Moose and his crew. There’s more to this, and I’m determined to figure it out. 
+[UgandaForever](https://imgur.com/a/QjC6eqs)
 
-Wish me luck, and if I don’t come back…. Well just wish me [luck.](https://reddit.com/r/travisliebert)
+[monkos](https://imgur.com/gallery/21AuOnw)
+
+
+#**Introduction**
+
+It's fall, which is usually the time for harvest. This week, we won't be focusing on harvesting at all, but rather growing. And even then, we're more interested in the scenery and design on a vineyard, which usually feature beautiful hills and nice countrysides. 
+
+So let's get to building! 
+
+
+**New Textures**
+
+Since we have an official release of the new textures, they are now allowed (along with the old ones). However, if you use the new textures, please specify. I wouldn't want to think you're using a texture pack and disqualify you. I'm not as used to the textures, so I may not recognize them right away. 
+
+**Inspiration**
+
+[Vineyard](https://www.chateauelan.com/wp-content/uploads/2018/07/Winery-Vineyard-Vignette.jpg)
+
+[Vineyard 2](https://www.worldsbestvineyards.com/wp-content/uploads/2019/06/vineyard-2.jpg)
+
+#**Challenge**
+
+**Vineyard**
+
+Build a vineyard. Must be some representation of grapes growing. Also must include a building serving as the "home base" for the operations. 
+
+____________
+
+#**Rules**
+
+1. **Submitting an entry** To submit an entry, you must comment on this post and format your comment like this:
+
+>**Title of submission**
+
+>**Link to submission photos or video (preferably youtube or Imgur)**
+
+>**Comments**
+
+2\. **Vanilla only** No mods that add new blocks or items are allowed. **No resource packs are allowed**. Any minecraft version is allowed and you may build with custom terrain, creative mode, world edit or etc as long as it doesn't add any new blocks to the game. **Shader pictures can be added in a SEPERATE album as bonus pictures.** None of those pictures will be accounted for when we judge the entries. Only vanilla screenshots.
+
+3\. **Any version of minecraft** i.e. PS3, Xbox 360, Pocket Edition.
+
+4\. **No preexisting builds** We're going with the honour system here but if anything had already been built before the start of the contest, don't submit it.
+
+5\. **Build teams are allowed** There may be more that one person building for a challenge but only one person may submit their entry with their account 
+
+6\. **New textures are allowed** The new versions of Jappa's textures are allowed to be used along with old legacy textures.
+
+____________
+
+#**Points and leaderboards**
+
+[Link to sheet. The leaderboards are on the 2nd page](https://docs.google.com/spreadsheets/d/1jPvIRHMTokS0l4pxYjPVfRyKiigkV1yQYidO4YvhiGk/edit?usp=sharing)
+
+-----------
+
+**For points and judging:**
+
+There is only 3 winners each week. Each participant will get 2 points for submitting their entry. There are honourable mentions but they do not get any extra points. 
+
+Anybody that places Bronze with gets **4 points** 
+
+Anybody that places Silver gets **6 points** 
+
+Anybody that places Gold gets **8 points** 
+
+_____________
+
+#**Schedule (AST)**
+
+------
+
+**Sunday, October 13th 2019:** Challenge begins! 
+
+**Saturday morning (around 11:00 AM AST), October 26th 2019:** Contest is closed. No other submissions will be allowed.
+
+**Sunday morning, October 27th 2019** A new challenge and winners are announced in that post

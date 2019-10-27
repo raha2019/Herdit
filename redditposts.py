@@ -46,6 +46,5 @@ def checkIfTextOrImage():
 if __name__ == '__main__':
     user_input = "nosleep"
     subreddit = user_input
-    #RedditPostAutoReader(subreddit)
-    #pygameVideo()
+    RedditPostAutoReader(subreddit)
     hopefully()
