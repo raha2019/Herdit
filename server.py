@@ -14,7 +14,7 @@ def form():
                             text-align:center;
                             color: #000000;
                             font-family: arial;
-                            
+
                     }
                     h1{
                             color: #FFFFFF;
