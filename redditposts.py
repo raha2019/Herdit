@@ -87,4 +87,4 @@ def checkIfTextOrImage():
          print("it didn't work")
 
 if __name__ == '__main__':
-    RedditPostAutoReader(input("Subreddit:"),int(input("Amount:")))
+    RedditPostAutoReader(input("Subreddit: "),int(input("Amount: ")))
